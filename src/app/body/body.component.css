@@ -1,0 +1,20 @@
+h1, h2 {
+  margin: 0;
+}
+
+.bgImg {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/photo-couch.jpg);
+}
+
+.cta {
+  height: 100vh;
+  color: white;
+}
+
+.imgSpace {
+  padding-top: 18rem;
+}
