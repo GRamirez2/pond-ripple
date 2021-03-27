@@ -1,3 +1,4 @@
+import { HowItWorksService } from './how-it-works.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CtaButtonComponent } from './cta-button/cta-button.component';
 import { HeadlineComponent } from './headline/headline.component';
 import { CtaCopyComponent } from './cta-copy/cta-copy.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { CtaCopyComponent } from './cta-copy/cta-copy.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HowItWorksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

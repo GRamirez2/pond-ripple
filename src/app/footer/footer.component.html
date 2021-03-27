@@ -1,1 +1,13 @@
-<p>footer works!</p>
+<div class="viewContainer">
+  <div class="centerText">
+    <div class=subTitle>How it Works</div>
+    <div class="flex">
+      <div class="steps" *ngFor="let data of $cleanData">
+        <span class="numbers">0{{data.stepNumber}}</span>
+        <h3 class="stepsTitle upperCase text-light-blk">{{data.versionContent[0].title}}</h3>
+        <p class="text-gray">{{data.versionContent[0].body}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

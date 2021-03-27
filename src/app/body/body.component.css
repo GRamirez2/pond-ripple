@@ -7,7 +7,7 @@ h1, h2 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/photo-couch.jpg);
+  background-image: url(../../assets/photo-couch_576.jpg);
 }
 
 .cta {
@@ -16,5 +16,76 @@ h1, h2 {
 }
 
 .imgSpace {
-  padding-top: 18rem;
+  padding-top: 8vh;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+@media (min-width: 375px) { 
+  .imgSpace {
+    padding-top: 20vw;
+  }
+}
+@media (min-width: 414px) { 
+  .imgSpace {
+    padding-top: 30vw;
+  }
+}
+@media (min-width: 375px) { 
+  .imgSpace {
+    padding-top: 40vw;
+  }
+}
+
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .bgImg { 
+    background-image: url(../../assets/photo-couch_768.jpg);
+    }
+    .imgSpace {
+      padding-top: 30vw;
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .bgImg { 
+    background-image: url(../../assets/photo-couch_900.jpg);
+    }
+    
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .bgImg { 
+    background-image: url(../../assets/photo-couch_1200px.jpg);
+    }
+    .imgSpace {
+      padding-top: 15vw;
+    }
+    
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .bgImg { 
+    background-image: url(../../assets/photo-couch.jpg);
+    }
+    
+}
+
+@media (min-width: 1600px) { 
+  .bgImg { 
+  background-image: url(../../assets/photo-couch_2x.jpg);
+  }
+  
 }

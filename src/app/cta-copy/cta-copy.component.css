@@ -1,9 +1,45 @@
-.copayWrapper {
-  width: 45%;
+.copyWrapper {
+  width: 100%;
   margin: 25px 0px;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.5;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .copyWrapper {
+    width: 80%;
+    margin: 25px 0px;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .copyWrapper {
+    width: 75%;
+    margin: 25px 0px;
+  }
+ 
 }
