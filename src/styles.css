@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.viewContainer {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.text-light-blk{
+  color: #333332;
+}
+.text-gray{
+  color: #63625f;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+  .flex {
+    flex-direction: column;
+  }
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
