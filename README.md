@@ -2,26 +2,36 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
+Created with the base Angular repo, no added libraries or css frameworks.
+
+npm version 6.14.8 or greater
+
+Tested on the Chrome Browser
+Media queries tested with the Chrome Browser responsive tools.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+- for api service
+- for the sort and reduce js method on the api return
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Reusable Components
+- headline
+  - pass in the text as 'headline'
+  - `<app-headline headline="Excitement Delivered daily."></app-headline>`
 
-## Further help
+- cta-copy
+  - pass in the text as 'copy'
+  - `<app-cta-copy copy="What’s the best way to shop for the latest video games and peripherals? How about never shopping at all? You’ll
+      get new stuff on your doorstep — every month."></app-cta-copy>`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- app-cta-button
+  - pass in button text as 'cta'
+  - `<app-cta-button cta="GET STARTED">
+      </app-cta-button>`
