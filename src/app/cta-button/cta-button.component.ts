@@ -10,7 +10,9 @@ export class CtaButtonComponent implements OnInit {
   @Input() cta:string;
   @Input() bgColor: string;
   buttonText:string;
-  buttonColor: string
+  buttonColor:string
+  isMouseOver:boolean = false;
+  didMouseClick: boolean = false;
 
   constructor() { }
 
@@ -19,7 +21,7 @@ export class CtaButtonComponent implements OnInit {
  */
   ngOnInit(): void {
     this.buttonText = this.cta ? this.cta : 'Call To Action'
-    // this.buttonColor = this.bgColor? this.bgColor : 'red'
+    // this.buttonColor = this.bgColor ? this.bgColor : 'red'
   }
 
 }

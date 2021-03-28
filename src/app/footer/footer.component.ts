@@ -21,10 +21,19 @@ export class FooterComponent implements OnInit {
    */
   ngOnInit(): void {
     this.howitworksService.fetchData().subscribe(res => {
-      this.$cleanData = this.sortReduceForUI(res)
-      console.log(this.$cleanData)
+      this.saveUpdatedData(res);
     })
   }
+
+  /**
+   * Created this function to do a simple unit test that the data was being sorted and Reduced correctly
+   * @param res is the return from the api call
+   */
+  saveUpdatedData(res){
+    this.$cleanData = this.sortReduceForUI(res);
+    console.log('How it Works Data', this.$cleanData);
+  }
+
   /**
    * @param data is the resturn from the data fetch
    * @returns sorted items with the versionContent reduced to the most recent date/time

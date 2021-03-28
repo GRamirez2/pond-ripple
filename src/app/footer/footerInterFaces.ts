@@ -1,11 +1,10 @@
 export interface CleanData {
   id: string,
   stepNumber: string,
-  versionContent: [
-    {
+  versionContent: {
       body: string,
       effectiveDate: string,
       title: string
-    }
-  ]
-}
+    }[]
+  
+}[]
