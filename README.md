@@ -22,11 +22,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 - for the sort and reduce js method on the api return
 
 ## Reusable Components
-- headline
+- app-headline
   - pass in the text as 'headline'
   - `<app-headline headline="Excitement Delivered daily."></app-headline>`
 
-- cta-copy
+- app-cta-copy
   - pass in the text as 'copy'
   - `<app-cta-copy copy="What’s the best way to shop for the latest video games and peripherals? How about never shopping at all? You’ll
       get new stuff on your doorstep — every month."></app-cta-copy>`
