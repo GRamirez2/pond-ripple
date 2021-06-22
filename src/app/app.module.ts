@@ -1,3 +1,4 @@
+import { ServicesFacade } from './services.facade';
 import { HowItWorksService } from './how-it-works.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http'
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [HowItWorksService],
+  providers: [HowItWorksService,
+    ServicesFacade],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

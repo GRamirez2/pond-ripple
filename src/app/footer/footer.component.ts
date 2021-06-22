@@ -1,5 +1,7 @@
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { HowItWorksService } from "../how-it-works.service"
+import { ServicesFacade } from '../services.facade';
 import { CleanData } from "./footerInterFaces"
 
 @Component({
@@ -11,9 +13,12 @@ import { CleanData } from "./footerInterFaces"
 export class FooterComponent implements OnInit {
 
   $cleanData: CleanData;
+  newData$: Observable<any> = this.servicesFacade.allData$;
+  UIDatat$: Observable<any> = this.servicesFacade.selectedData$;
 
   constructor(
-    private howitworksService: HowItWorksService
+    private howitworksService: HowItWorksService,
+    private servicesFacade: ServicesFacade
   ) { }
 
   /**
@@ -23,6 +28,7 @@ export class FooterComponent implements OnInit {
     this.howitworksService.fetchData().subscribe(res => {
       this.saveUpdatedData(res);
     })
+    this.reset();
   }
 
   /**
@@ -47,6 +53,14 @@ export class FooterComponent implements OnInit {
       } else { return el}
     })
     return sortedAndReduced.sort((a, b) => a.stepNumber-b.stepNumber);
+  }
+
+  reset(){
+    this.loadData();
+  }
+
+  loadData(){
+    this.servicesFacade.loadData();
   }
 
 }

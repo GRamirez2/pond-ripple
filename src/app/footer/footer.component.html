@@ -9,5 +9,12 @@
       </div>
     </div>
   </div>
+  <div *ngIf=newData$ else theOther></div>
+  <pre>{{ newData$ | async | json }}</pre>
+  <hr>
+  <div *ngIf=UIDatat$ else theOther></div>
+  <pre>{{ UIDatat$ | async | json }}</pre>
+  <hr>
+  <ng-template #theOther> No Data to show</ng-template>
 
 </div>

@@ -25,4 +25,13 @@ export class HowItWorksService {
       );
   }
 
+  fetchMSI():Observable<any>{
+    return this.http
+      .get('https://manage-my.site/msi/')
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      );
+  }
+
 }
